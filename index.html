@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ichiban Kuji Pre-Order Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #ff5a5f;
+      color: white;
+      padding: 16px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Grid for figures */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .item-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .item-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .details {
+      padding: 15px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .details h2 {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 5px 10px;
+      background: #ffdd57;
+      border-radius: 6px;
+      font-size: 12px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .price {
+      color: #ff5a5f;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .dp {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background: #ff5a5f;
+      color: white;
+      border: none;
+      padding: 10px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      width: 100%;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #ff3e43;
+    }
+
+  </style>
+</head>
+<body>
+  <header>Ichiban Kuji Pre-Order Shop</header>
+
+  <div class="container">
+
+    <!-- Figures Grid -->
+    <div class="grid">
+
+      <!-- Masterlise Guts Prize B -->
+      <div class="item-card">
+        <img src="https://uploads.onecompiler.io/44579keb5/445e3qx97/images%20(1).jpeg" alt="Masterlise Guts Prize B">
+        <div class="details">
+          <div>
+            <span class="badge">PRE-ORDER</span>
+            <h2>Masterlise Guts Prize B</h2>
+            <div class="price">₱2,890</div>
+            <div class="dp">Downpayment (20%): ₱578</div>
+            <div class="description">Highly detailed Guts figure, perfect for collectors and display.</div>
+          </div>
+          <button>Reserve Now (GCash / COD)</button>
+        </div>
+      </div>
+
+      <!-- Femto Prize A -->
+      <div class="item-card">
+        <img src="https://uploads.onecompiler.io/44579keb5/445e3qx97/images.jpeg" alt="Femto Prize A">
+        <div class="details">
+          <div>
+            <span class="badge">PRE-ORDER</span>
+            <h2>Femto Prize A</h2>
+            <div class="price">₱6,800</div>
+            <div class="dp">Downpayment (20%): ₱1,360</div>
+            <div class="description">Collector’s edition Femto figure with premium sculpting and paintwork.</div>
+          </div>
+          <button>Reserve Now (GCash / COD)</button>
+        </div>
+      </div>
+
+      <!-- Skull Knight Prize C -->
+      <div class="item-card">
+        <img src="https://uploads.onecompiler.io/44579keb5/44579sctn/367954062_1_1762590619_w1200.webp" alt="Skull Knight Prize C">
+        <div class="details">
+          <div>
+            <span class="badge">PRE-ORDER</span>
+            <h2>Skull Knight Prize C</h2>
+            <div class="price">₱3,650</div>
+            <div class="dp">Downpayment (20%): ₱730</div>
+            <div class="description">Detailed Skull Knight figure. Perfect for display or diorama setups.</div>
+          </div>
+          <button>Reserve Now (GCash / COD)</button>
+        </div>
+      </div>
+
+      <!-- Skull Knight Mounted Variant -->
+      <div class="item-card">
+        <img src="https://uploads.onecompiler.io/44579keb5/44579hqdk/images.jpeg" alt="Skull Knight Mounted Variant">
+        <div class="details">
+          <div>
+            <span class="badge">PRE-ORDER</span>
+            <h2>Skull Knight Mounted Variant</h2>
+            <div class="price">₱15,650</div>
+            <div class="dp">Downpayment (20%): ₱3,130</div>
+            <div class="description">Exclusive mounted Skull Knight figure with premium detailing. Limited edition.</div>
+          </div>
+          <button>Reserve Now (GCash / COD)</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
